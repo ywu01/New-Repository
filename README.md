@@ -1,4 +1,4 @@
-# [A Personal Website]
+# A Personal Website
 ## A Few Notes
 
 Credit to Start Bootstrap for basic template
