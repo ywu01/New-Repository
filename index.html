@@ -1,345 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>A Personal Website</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-
-    <!-- Custom Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
-
-
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/simple-sidebar.css" rel="stylesheet">
-
-    <!-- Plugin CSS -->
-    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/creative.css" type="text/css">
-
-
-</head>
-
-<style type="text/css">
-    body {
-        font-family: 'Lato', sans-serif;
-    }
+<link href='https://fonts.googleapis.com/css?family=Lato:300,100,100italic' rel='stylesheet' type='text/css'>
+<!-- Is Bootstrap allowed? Framework, not a library.. -->
+<!-- <link href="bootstrap.min.css" rel="stylesheet"> -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="design.css">
+<style> 
 
 </style>
+</head>
+<body>
 
-<body id="page-top">
+<div class="container">
+	<div class="container">
+		<h1>KIT WU</h1>
+		<h4>2016/2017</h4>
+		<!-- TODO: JQuery button to change font-weights. 100 is wayyy too small on my laptop, but somehow good enough for Mac. Will need 300 as an option. -->
+	</div>
 
-    <div id="wrapper" class="toggled">
+	<br>
+	<br>
 
-    </div> 
-    <!-- /#wrapper -->
+	<div class="col-lg-12" >
+		<h3 data-toggle="collapse" href="#journal">BIO</h3>
+		<div id="journal" class="collapse">
+			<p>I'm a rising senior at Harvard majoring in Economics and Computer Science. I interned at Zinc, a Y-Combinator backed e-commerce startup, last summer and currently will be back in the Bay Area for the summer of 2016. During this year's spring semester, I've worked along with Daniel Wu and a few others on their President's Challenge entry, WelcomeHome, which got to the final round. I've also been a photographer for Kirkland House for the past two years and have served as a multimedia executive for The Harvard Crimson between my sophomore/junior years.</p>
+			
+			<p>I'm interested in the intersection of business, product, and design. My resume offers some additional details.</p>
+		</div>
 
-    <header>
-        <div class="header-content" id="test">
-            <div class="header-content-inner">
-                <h1>Hi, I'm Kit.</h1>
-                <hr>
-                <p style="font-size: 20px">I'm a junior at Harvard. Made most of this in ~4 hours so please go easy on me.</p>
-                <!-- <a href="#kit-biography" style="font-size: 10px" class="btn btn-default" >Continue</a> -->
-            </div>
-        </div>
-    </header>
+		<h3 data-toggle="collapse" href="#intro">PROJECTS</h3>
+			<div id="intro" class="collapse">
+			<h4>KIRKLAND HOUSE</h4>
+				<p>I've been the house photographer for the past three years. Some of them are included in my portfolio, accessible below.</p>
+			<h4>WELCOMEHOME</h4>
+				<p>An entry into the Harvard President's Challenge, we ended up with finalist status. We also ended up with semi-finalist status on MIT100k. We plan to continue developing this idea and deploy a prototype in the Fall of 2016. <a href="http://www.welcomehome.city/#!renters-1/nbgy0" style="font-size:20px">welcomehome.city</a></p>
+			<h4>THE HARVARD CRIMSON</h4>
+				<p>I was an executive for the multimedia board for a year, and now participate casually as a JE. I've had hundreds of photos published for this student-run publication throughout my three years there. Pageviews run in the millions annually for the website; I am currently working on an online design leading up to the 2016 Commencement. <a href="http://www.thecrimson.com/" style="font-size:20px">thecrimson.com</a></p> 
+			<h4>ZINC TECHNOLOGIES</h4>
+				<p>As a business analyst, I did a mix of business development, marketing, sales, and support. Typical for a company of small size, as was the case with Zinc. Specifically worked with support for PriceYak, an automatic repricer, and growth for JoeLister. <a href="https://zinc.io/" style="font-size:20px">zinc.io</a></p>
+			<h4>DATA VIZ</h4>
+				<p>The final project for CS171, a course about data visualization. This particular visualization draws data from the Spotify API, and creates a visual network of artists based on an initial query. Double clicking nodes will lead you to the artist at that particular node; using the toolbar in the middle will also allow you to shuffle, play different songs, and navigate. Worked in a team of three. <a href="http://cwjshen.github.io/7-Degrees-of-Maroon-5/" style="font-size:20px">Hosted on Github.</a></p>
+			</div>
 
-    <section class="bg-primary" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">A BRIEF BIO</h2>
-                    <hr class="light">
+		<h3 data-toggle="collapse" href="#resume">RESUME</h3>
+		<div id="resume" class="collapse">
+			<p>Contact me. (510) 798-0598, or alternatively, click the "contact/email" tab.</p>
+		</div>
+
+		<!-- Need to implement on:hover underline/bold -->
+		<a href="file:///C:/Users/Kit/Dropbox/NEW%20Personal%20Website/photography.html">PHOTOGRAPHY</a>
+
+		<br>
+
+		<a href="mailto:ywu01@college.harvard.edu" target="_top">CONTACT/EMAIL</a>
+	</div>
+
 </div>
-                    <div class="container">
-
-            <div class="row">
-                <div class="col-sm-6 col-md-6 text-center">
-                    <div class="service-box">
-
-                        <h3>I WASN'T ALWAYS ON THE EAST COAST.</h3>
-                        <p>
-                            I'm originally from San Leandro, CA, where I lived for a little more than a decade. Before that, I lived in Shenzhen; in 2013, I moved over to Massachusetts.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-6 text-center">
-                    <div class="service-box">
-                        
-                        <h3>I'M A JUNIOR AT HARVARD.</h3>
-                        <p>
-                        I'm officially doing Economics, but I've taken a bunch of courses focusing on energy and the environment and will most likely take more senior year. On the side, I'm doing some CS - I'd say that I prefer to do more design/front-end work, but the whole development process interests me. </p>
-                    </div>
-                </div>
-            </div>
-        
-            <br>
-            <br>
-            <br>
-
-
-            <div class="row">
-                <div class="col-sm-6 col-md-6 text-center">
-                    <div class="service-box">
-
-                        <h3>I TAKE PHOTOS SOMETIMES.</h3>
-                        <p>
-                            But I also enjoy playing tennis, biking around Boston, and generally just taking advantage of the fact that I'm living in a place so different from California. Snow is nice. And the same goes for visiting friends in New York. Travel feels good, and I try to do it every once in a while. 
-                        </p>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-6 text-center">
-                    <div class="service-box">
-                        
-                        <h3>I'D LIKE TO TRY OUT A PRODUCT COMPANY.</h3>
-                        <p>
-                        I'd like to see through the process and pull all the relevant departments together to make it happen - product, software, whatever. I'd like to work with designers and understand their input and communicate with developers and cut through red tape so everyone else doesn't have to.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-                
-            </div>
-        </div>
-    </section>
-
-    <section id="services">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">SELECTED/RELEVANT CLASSES</h2>
-                    <hr class="primary">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <!-- Freshman -->
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-newspaper-o wow bounceIn text-primary" data-wow-delay=".2s"></i>
-                        <h3>FRESHMAN YEAR</h3>
-                        <p class="text-muted">
-                        <span class="classes">USW 35</span> - Equity + Excellence in US Education
-                        <br>
-                        <span class="classes">Gov 20</span> - Intro to Comparative Politics
-                        <br>
-                        <span class="classes">ESPP 90s</span> - Economics, Tech, and Public Policy of Renewable Energy 
-                        <br>
-                        <span class="classes">Expos 20</span> - Expository Writing </p>
-                    </div>
-                </div>
-                <!-- Sophomore -->
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-paper-plane wow bounceIn text-primary" data-wow-delay=".1s"></i>
-                        <h3>SOPHOMORE YEAR</h3>
-                        <p class="text-muted">
-                        <span class="classes">Econ 1420</span> - American Economic Policy, w/Marty Feldstein + Jeff Liebman + Larry Summers
-                        <br>
-                        <span class="classes">USW 36</span> - Innovation and Entreprenurship 
-                        <br>
-                        <span class="classes">CS 171</span> - Visualization (with D3)
-                        <br>
-                        <span class="classes">CS50</span> - Intro to CS </p>
-                    </div>
-                </div>
-                <!-- Junior -->
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-diamond wow bounceIn text-primary"></i>
-                        <h3>JUNIOR YEAR</h3>
-                        <p class="text-muted">
-                        <span class="classes">CS 134</span> - Networks
-                        <br>
-                        <span class="classes">ER 39</span> - Money, Morals, and Markets
-                        <br>
-                        <span class="classes">Stat 100</span> - Statistics for Social Sciences 
-                        <br>
-                        <span class="classes">AI 24</span> - First Nights / Five Performances </p>
-                    </div>
-                </div>
-                <!-- Senior -->
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-heart wow bounceIn text-primary" data-wow-delay=".3s"></i>
-                        <h3>Planned Senior Year + Sophomore Year 2nd Semester</h3>
-                        <p class="text-muted">
-                        <span class="classes">CS 124</span> - Data Structures and Algorithms
-                        <br>
-                        <span class="classes">CS 179</span> - Product Design
-                        <br>
-                        <span class="classes">Econ 1010b</span> - Intermediate Macroeconomics  
-                        <br>
-                        <span class="classes">Music 7</span> - Harmony in Electronic Dance Music </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="no-padding" id="portfolio">
-        <div class="container-fluid">
-            <div class="row no-gutter">
-                <div class="col-lg-4 col-sm-6">
-                    <a href="http://www.thecrimson.com/article/2014/10/3/biden-IOP-harvard-speech/" target="_blank" class="portfolio-box">
-                        <img src="img/portfolio/1.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Biden
-                                </div>
-                                <div class="project-name">
-                                    Institute of Politics, for The Harvard Crimson
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="http://www.thecrimson.com/article/2015/1/28/snow-day-HUDS-blizzard/" target="_blank" class="portfolio-box">
-                        <img src="img/portfolio/2.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Winthrop Gate
-                                </div>
-                                <div class="project-name">
-                                    Blizzard Juno, 2015
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="http://www.thecrimson.com/gallery/2015/4/21/boston-marathon-2015/" target="_blank" class="portfolio-box">
-                        <img src="img/portfolio/3.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Spectators
-                                </div>
-                                <div class="project-name">
-                                    Boston Marathon, 2015
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="http://kirkland.harvard.edu/" target="_blank" class="portfolio-box">
-                        <img src="img/portfolio/4.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Atmosphere
-                                </div>
-                                <div class="project-name">
-                                    Kirkland House Holiday Dinner, Kirkland House
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="https://flic.kr/p/vhYGZ9" target="_blank" class="portfolio-box">
-                        <img src="img/portfolio/5.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Yosemite
-                                </div>
-                                <div class="project-name">
-                                    Yosemite Valley, Summer of 2015
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/6.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Athletics
-                                </div>
-                                <div class="project-name">
-                                    Harvard Men's Lightweight Crew
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <aside class="bg-dark">
-        <div class="container text-center">
-            <div class="call-to-action">
-                <h2>Oh, and here's a pretty neat D3 visualization I made for a class with a few others.</h2>
-                <a href="http://cwjshen.github.io/7-Degrees-of-Maroon-5/" class="btn btn-default btn-xl" target="_blank">Check it out.</a>
-                <br>
-                <br>
-                <img src="img/portfolio/10.jpg" class="img-responsive" alt="">
-            </div>
-        </div>
-    </aside>
-
-    <section class="no-padding specialPhoto">
-        <img src="img/crew.jpg" class="img-responsive" alt="">
-    </section>
-
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Contact Info</h2>
-                    <hr class="primary">
-                    <p>Send me an email, call me via. phone, schedule an interview. I'm ready for whatever.</p>
-                </div>
-                <div class="col-lg-4 col-lg-offset-2 text-center">
-                    <i class="fa fa-phone fa-3x wow bounceIn"></i>
-                    <p>510-798-0598</p>
-                </div>
-                <div class="col-lg-4 text-center">
-                    <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                    <p><a href="mailto:ywu01@college.harvard.edu">ywu01@college.harvard.edu</a></p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/jquery.fittext.js"></script>
-    <script src="js/wow.min.js"></script>
-
-  
-
 
 </body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 </html>

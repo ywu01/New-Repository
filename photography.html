@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href='https://fonts.googleapis.com/css?family=Lato:300,100,100italic' rel='stylesheet' type='text/css'>
+<!-- Is Bootstrap allowed? Framework, not a library.. -->
+<!-- <link href="bootstrap.min.css" rel="stylesheet"> -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="design.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<script>
+
+$( document ).ready(function() {
+    $('.newboxes').each(function(index){
+	$(this).hide();
+})
+});
+
+function ShowOne(thechosenone) {
+
+     $('.newboxes').each(function(index) {
+     	console.log("hello it's me");
+          if ($(this).attr("id") == thechosenone) {
+               $(this).show();
+               console.log("I was wondering");
+          }
+          else {
+               $(this).hide();
+               console.log("If after all these years");
+          }
+     });
+}
+
+// test function
+function onePlusone(one) {
+	console.log(one);
+}
+</script>
+
+</head>
+<body>
+
+<div class="container">
+	<div class="container">
+		<h1>PHOTOGRAPHY</h1>
+		<h4>By Y. Kit Wu</h4>
+	</div>
+
+	<br>
+	<br>
+
+	<div class="col-lg-4">
+		<!-- <h3 data-toggle="collapse" href="#intro">INTRO</h3>
+			<div id="intro" class="collapse">
+				<p>I'm a rising Harvard senior, and this is a portfolio of my photos in the past two years. You can find my main website here, which has a resume, list of photos, and contact info.</p>
+			</div> -->
+		<h2 id="people" onclick="ShowOne('one')">PORTRAITS</h2>
+		<h2 id="people" onclick="ShowOne('people')">PEOPLE</h2>
+		<h2 id="toggle" onclick="ShowOne('places')">PLACES</h2>
+		<h2 id="toggle" onclick="ShowOne('crimson')">CRIMSON</h2>
+		<a href="file:///C:/Users/Kit/Dropbox/NEW%20Personal%20Website/INDEX.html">HOMEPAGE</a>
+	</div>
+
+	<div class="col-lg-8 hello">
+		
+		<div class="newboxes" id="one">
+			<a data-flickr-embed="true" data-context="true"  href="https://www.flickr.com/photos/94864565@N08/26215869793/in/datetaken-public/" title="DSC_6007"><img src="https://farm8.staticflickr.com/7002/26215869793_bc684affd6_c.jpg" alt="DSC_6007"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			<a data-flickr-embed="true" data-context="true"  href="https://www.flickr.com/photos/94864565@N08/25726596822/in/album-72157668452335066/" title="DSC_1238"><img src="https://farm2.staticflickr.com/1720/25726596822_08dc97ef92_c.jpg" alt="DSC_1238"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			<a data-flickr-embed="true" data-context="true"  href="https://www.flickr.com/photos/94864565@N08/25036389722/in/album-72157668452335066/" title="Lucy Liu, at Kirkland House / Cultural Rhythms, Harvard"><img src="https://farm2.staticflickr.com/1689/25036389722_328f8263ae_c.jpg" alt="Lucy Liu, at Kirkland House / Cultural Rhythms, Harvard"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			<a data-flickr-embed="true" data-context="true"  href="https://www.flickr.com/photos/94864565@N08/24511306454/in/album-72157668452335066/" title="Christine!"><img src="https://farm2.staticflickr.com/1613/24511306454_23f3b5cc02_c.jpg" alt="Christine!"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			<a data-flickr-embed="true" data-context="true"  href="https://www.flickr.com/photos/94864565@N08/24963550806/in/album-72157668452335066/" title="DSC_7854"><img src="https://farm2.staticflickr.com/1688/24963550806_567724633b_c.jpg" alt="DSC_7854"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			<a data-flickr-embed="true" data-context="true"  href="https://www.flickr.com/photos/94864565@N08/23101676943/in/album-72157668452335066/" title="DSC_1778"><img src="https://farm6.staticflickr.com/5663/23101676943_ba13a7331f_c.jpg" alt="DSC_1778"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			<a data-flickr-embed="true" data-context="true"  href="https://www.flickr.com/photos/94864565@N08/22571233384/in/album-72157668452335066/" title="DSC_3627"><img src="https://farm6.staticflickr.com/5644/22571233384_33ab348b0e_c.jpg" alt="DSC_3627"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			<a data-flickr-embed="true" data-context="true"  href="https://www.flickr.com/photos/94864565@N08/21555947176/in/album-72157668452335066/" title="DSC_1210"><img src="https://farm6.staticflickr.com/5759/21555947176_fe51b438a1_c.jpg" width="532" height="800" alt="DSC_1210"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+		</div>
+		<div class="newboxes" id="people">
+				<a data-flickr-embed="true" data-context="true"  href="https://www.flickr.com/photos/94864565@N08/26966690071/in/datetaken-public/" title="DSC_6430"><img src="https://farm8.staticflickr.com/7042/26966690071_cb319805fc_b.jpg" alt="DSC_6430"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+				<a data-flickr-embed="true" data-context="true"  href="https://www.flickr.com/photos/94864565@N08/26429685954/" title="DSC_6408"><img src="https://farm8.staticflickr.com/7459/26429685954_92662c67f5_c.jpg" alt="DSC_6408"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+				<a data-flickr-embed="true"  href="https://www.flickr.com/photos/94864565@N08/27001881606/in/datetaken-public/" title="DSC_6703"><img src="https://farm8.staticflickr.com/7608/27001881606_4ec07de206_b.jpg" alt="DSC_6703"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+				<a data-flickr-embed="true" data-context="true"  href="https://www.flickr.com/photos/94864565@N08/27035445485/in/datetaken-public/" title="DSC_6757"><img src="https://farm8.staticflickr.com/7050/27035445485_ffc04fd301_c.jpg" width="800" height="534" alt="DSC_6757"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+				<a data-flickr-embed="true" data-context="true"  href="https://www.flickr.com/photos/94864565@N08/26756200071/in/album-72157668452335066/" title="DSC_6051"><img src="https://farm8.staticflickr.com/7168/26756200071_2c5d937a88_c.jpg" alt="DSC_6051"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+				<a data-flickr-embed="true" data-context="true"  href="https://www.flickr.com/photos/94864565@N08/26726763762/in/album-72157668452335066/" title="DSC_5832"><img src="https://farm8.staticflickr.com/7291/26726763762_d5a4eace70_c.jpg" alt="DSC_5832"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+				<a data-flickr-embed="true" data-context="true"  href="https://www.flickr.com/photos/94864565@N08/26820342825/in/album-72157668452335066/" title="DSC_5495"><img src="https://farm8.staticflickr.com/7239/26820342825_dd4872fd4f_c.jpg" alt="DSC_5495"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+				<a data-flickr-embed="true" data-context="true"  href="https://www.flickr.com/photos/94864565@N08/26374315750/in/album-72157668452335066/" title="DSC_9322"><img src="https://farm2.staticflickr.com/1456/26374315750_699cb9abd8_c.jpg" alt="DSC_9322"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+				<a data-flickr-embed="true" data-context="true"  href="https://www.flickr.com/photos/94864565@N08/25558012722/in/datetaken-public/" title="DSC_0719"><img src="https://farm2.staticflickr.com/1502/25558012722_8f0a692cb6_c.jpg" width="532" height="800" alt="DSC_0719"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+				<a data-flickr-embed="true" data-context="true"  href="https://www.flickr.com/photos/94864565@N08/25329819385/in/album-72157668452335066/" title="DSC_0355"><img src="https://farm2.staticflickr.com/1478/25329819385_af5843e031_c.jpg" Alt="DSC_0355"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+				<a data-flickr-embed="true" data-context="true"  href="https://www.flickr.com/photos/94864565@N08/24962157039/in/album-72157668452335066/" title="DSC_0309"><img src="https://farm2.staticflickr.com/1627/24962157039_639f86df30_c.jpg" alt="DSC_0309"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+				<a data-flickr-embed="true" data-context="true"  href="https://www.flickr.com/photos/94864565@N08/22073294239/in/album-72157668452335066/" title="DSC_2035"><img src="https://farm1.staticflickr.com/703/22073294239_77609e5884_c.jpg" width="800" height="450" alt="DSC_2035"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+		</div>
+
+		<div class="newboxes" id="places">
+				<a data-flickr-embed="true" data-context="true"  href="https://www.flickr.com/photos/94864565@N08/26929711776/in/album-72157668452335066/" title="DSC_6366"><img src="https://farm8.staticflickr.com/7604/26929711776_870328b1fc_c.jpg" alt="DSC_6366"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+				<a data-flickr-embed="true" data-context="true"  href="https://www.flickr.com/photos/94864565@N08/25521067464/in/album-72157668452335066/" title="DSC_0001"><img src="https://farm2.staticflickr.com/1484/25521067464_e00c9c52a5_c.jpg" alt="DSC_0001"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+				<a data-flickr-embed="true" data-context="true"  href="https://www.flickr.com/photos/94864565@N08/25821491776/in/album-72157668452335066/" title="DSC_1274"><img src="https://farm2.staticflickr.com/1600/25821491776_d8f6e8de81_c.jpg" alt="DSC_1274"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+				<a data-flickr-embed="true" data-context="true"  href="https://www.flickr.com/photos/94864565@N08/25821492116/in/album-72157668452335066/" title="DSC_1252"><img src="https://farm2.staticflickr.com/1508/25821492116_9f584b0849_c.jpg" alt="DSC_1252"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+				<a data-flickr-embed="true" data-context="true"  href="https://www.flickr.com/photos/94864565@N08/25034185600/in/album-72157668452335066/" title="The Harvard Radcliffe Orchestra"><img src="https://farm2.staticflickr.com/1478/25034185600_45348646ee_c.jpg" alt="The Harvard Radcliffe Orchestra"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+				<a data-flickr-embed="true" data-context="true"  href="https://www.flickr.com/photos/94864565@N08/24865874475/in/album-72157668452335066/" title="DSC_0209"><img src="https://farm2.staticflickr.com/1468/24865874475_34a7e5fba3_c.jpg" width="800" height="532" alt="DSC_0209"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+				<a data-flickr-embed="true" data-context="true"  href="https://www.flickr.com/photos/94864565@N08/23173615546/in/album-72157668452335066/" title="DSC_3795"><img src="https://farm6.staticflickr.com/5668/23173615546_d9944fd0d3_c.jpg" alt="DSC_3795"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+		</div>
+
+		<div class="newboxes" id="crimson">
+				<a data-flickr-embed="true" data-context="true"  href="https://www.flickr.com/photos/94864565@N08/26317432533/in/album-72157668452335066/" title="DSC_6215"><img src="https://farm8.staticflickr.com/7386/26317432533_362a354c79_c.jpg" alt="DSC_6215"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+				<a data-flickr-embed="true" data-context="true"  href="https://www.flickr.com/photos/94864565@N08/26853801381/in/datetaken-public/" title="DSC_6136"><img src="https://farm8.staticflickr.com/7396/26853801381_3ee965b5db_c.jpg" alt="DSC_6136"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+				<a data-flickr-embed="true" data-context="true"  href="https://www.flickr.com/photos/94864565@N08/26853801321/in/album-72157668452335066/" title="DSC_6148"><img src="https://farm8.staticflickr.com/7670/26853801321_3ee965b5db_c.jpg" alt="DSC_6148"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+				<a data-flickr-embed="true" data-context="true"  href="https://www.flickr.com/photos/94864565@N08/25443273380/in/album-72157668452335066/" title="DSC_1130"><img src="https://farm2.staticflickr.com/1648/25443273380_a0edfcd419_c.jpg" alt="DSC_1130"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+				<a data-flickr-embed="true" data-context="true"  href="https://www.flickr.com/photos/94864565@N08/24511307474/in/album-72157668452335066/" title="The Crowd at Harvard vs. Cornell"><img src="https://farm2.staticflickr.com/1467/24511307474_4f9601dab8_c.jpg" alt="The Crowd at Harvard vs. Cornell"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+				<a data-flickr-embed="true" data-context="true"  href="https://www.flickr.com/photos/94864565@N08/20960977753/in/album-72157668452335066/" title="DSC_1399"><img src="https://farm6.staticflickr.com/5705/20960977753_114fe63aff_c.jpg" alt="DSC_1399"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+				<a data-flickr-embed="true" data-context="true"  href="https://www.flickr.com/photos/94864565@N08/26543721601/in/datetaken-public/" title="DSC_1184"><img src="https://farm2.staticflickr.com/1610/26543721601_37ed6f08b5_c.jpg" width="800" height="500" alt="DSC_1184"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+		</div>
+	</div>
+
+</div>
+
+</body>
+
+</html>
