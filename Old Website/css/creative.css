@@ -161,6 +161,11 @@ header .header-content .header-content-inner p {
     max-width: 400px;
 }
 
+.service-box-fun {
+    margin: 50px auto 0;
+    max-width: 800px;
+}
+
 @media(min-width:992px) {
     .service-box {
         margin: 20px auto 0;
@@ -204,7 +209,8 @@ header .header-content .header-content-inner p {
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
     padding: 0 15px;
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-weight: 200;
 }
 
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
@@ -242,6 +248,8 @@ header .header-content .header-content-inner p {
 .text-secondary{
     color: #FFFFFF;
 }
+
+
 
 .no-gutter > [class*=col-] {
     padding-right: 0;
@@ -358,7 +366,7 @@ fieldset[disabled] .btn-primary.active {
     border: 0;
     border-radius: 300px;
     text-transform: uppercase;
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Lato', sans-serif;
     font-weight: 700;
 }
 
