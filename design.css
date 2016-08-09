@@ -87,3 +87,9 @@ img {
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
+
+
+/*For mobile*/
+.dropdown-backdrop {
+    position: static;
+}
