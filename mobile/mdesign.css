@@ -27,14 +27,14 @@ a:active {
 }
 
 p {
-	font-size: 20px;
+	font-size: 36px;
 	font-weight: 400;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
 
 p a {
-	font-size: 28px;
+	font-size: 36px;
 	font-weight: 300;
 	color: #990000;
 }
@@ -45,7 +45,7 @@ h1 {
 }
 
 h2 {
-	font-size: 50px;
+	font-size: 60px;
 	font-weight: 200;
 }
 
@@ -64,17 +64,17 @@ h3 {
 
 /*Subtitle - "Measuring and Improving"*/
 h4 {
-	font-size: 38px;
+	font-size: 40px;
 	font-weight: 300;
 }
 
 a {
-	font-size: 50px;
+	font-size: 60px;
 	font-weight: 100
 }
 
 h3 {
-	font-size: 60px;
+	font-size: 65px;
 	font-weight: 100;
 }
 
