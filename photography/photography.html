@@ -3,7 +3,6 @@
 <head>
 <link href='https://fonts.googleapis.com/css?family=Lato:300,100,100italic' rel='stylesheet' type='text/css'>
 <!-- Is Bootstrap allowed? Framework, not a library.. -->
-<!-- <link href="bootstrap.min.css" rel="stylesheet"> -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="pdesign.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -14,6 +13,12 @@
 $( document ).ready(function() {
     $('.newboxes').each(function(index){
 	$(this).hide();
+})
+});
+
+$( document ).ready(function() {
+    $('.landing').each(function(index){
+	$(this).show();
 })
 });
 
@@ -37,15 +42,13 @@ function ShowOne(thechosenone) {
 
 <div class="container">
 	<div class="container">
-		<h1>PHOTOGRAPHY</h1>
-		<h4>A QUICK COLLECTION / By Y. Kit Wu</h4>
+		<h1>A QUICK COLLECTION</h1>
 	</div>
 
 	<br>
 	<br>
 
 	<div class="col-lg-4">
-		
 		<h2 id="people" onclick="ShowOne('portraits')">INDIVIDUALS</h2>
 		<h2 id="toggle" onclick="ShowOne('crimson')">CRIMSON</h2>
 		<h2 id="toggle" onclick="ShowOne('places')">PLACES</h2>
@@ -54,7 +57,25 @@ function ShowOne(thechosenone) {
 		<a href="http://ywu01.github.io/">HOMEPAGE</a>
 	</div>
 
+	<div class="col-lg-8">
+		<div class="newboxes landing" id="landing">
+			<img src="https://c1.staticflickr.com/4/3949/33410124091_68e53a6a35_c.jpg" alt="DSC_0599"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+		</div>
+	</div>
+
 	<div class="col-lg-8 hello">
+		<div class="newboxes" id="portraits">
+			<h3>Individuals</h3>
+			<img src="https://c1.staticflickr.com/1/689/33076152432_19bfc79d8b_c.jpg" alt="OHT"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			<img src="https://c1.staticflickr.com/4/3949/33410124091_68e53a6a35_c.jpg" alt="DSC_0599"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			<img src="https://c4.staticflickr.com/8/7001/27260317131_0af984075f_k.jpg" alt="DSC_1436"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			<img src="https://c3.staticflickr.com/8/7195/27055880050_aaf892535a_k.jpg" alt="DSC_9545"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			<img src="https://c1.staticflickr.com/1/627/32406181414_84c289ca35_c.jpg" alt="OHT"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			<img src="https://c7.staticflickr.com/4/3930/15381828910_474213de61_c.jpg" alt="BIDEN"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			<img src="https://c3.staticflickr.com/6/5679/22832303546_c451c3bf7d_c.jpg" alt="SUPREME COURT JUSTICE BREYER"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			<img src="https://farm2.staticflickr.com/1689/25036389722_328f8263ae_c.jpg" alt="Lucy Liu, at Kirkland House / Cultural Rhythms, Harvard"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+		</div>
+
 		<div class="newboxes" id="graduation">
 			<h3>Spielberg</h3>
 			<img src="https://c8.staticflickr.com/8/7348/27260316631_dec363ad68_k.jpg" alt="DSC_1444"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
@@ -72,24 +93,6 @@ function ShowOne(thechosenone) {
 			<img src="https://c5.staticflickr.com/8/7523/26723599564_af5a40ab54_k.jpg" alt="DSC_0449"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 			<img src="https://c3.staticflickr.com/8/7353/27055870890_42aec4d5f0_k.jpg" alt="DSC_9623"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 			<img src="https://c7.staticflickr.com/8/7789/27055872510_4c20ef04be_k.jpg" alt="DSC_9570"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
-		</div>
-		
-		<div class="newboxes" id="portraits">
-			<h3>Individuals</h3>
-			<img src="https://c4.staticflickr.com/8/7001/27260317131_0af984075f_k.jpg" alt="DSC_1436"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
-			<img src="https://c3.staticflickr.com/8/7195/27055880050_aaf892535a_k.jpg" alt="DSC_9545"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
-			<img src="https://c1.staticflickr.com/1/627/32406181414_84c289ca35_c.jpg" alt="OHT"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
-			<img src="https://c7.staticflickr.com/4/3930/15381828910_474213de61_c.jpg" alt="BIDEN"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
-			<img src="https://c1.staticflickr.com/1/689/33076152432_19bfc79d8b_c.jpg" alt="OHT"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
-			<img src="https://c3.staticflickr.com/6/5679/22832303546_c451c3bf7d_c.jpg" alt="SUPREME COURT JUSTICE BREYER"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
-			<img src="https://farm2.staticflickr.com/1689/25036389722_328f8263ae_c.jpg" alt="Lucy Liu, at Kirkland House / Cultural Rhythms, Harvard"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
-			<!-- 
-			<img src="https://farm8.staticflickr.com/7002/26215869793_bc684affd6_c.jpg" alt="DSC_6007"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
-			<img src="https://farm2.staticflickr.com/1720/25726596822_08dc97ef92_c.jpg" alt="DSC_1238"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
-			<img src="https://farm2.staticflickr.com/1688/24963550806_567724633b_c.jpg" alt="DSC_7854"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
-			<img src="https://farm6.staticflickr.com/5644/22571233384_33ab348b0e_c.jpg" alt="DSC_3627"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
-			<img src="https://c6.staticflickr.com/8/7535/15257257293_71980d364c_c.jpg" alt="ALGIERS"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
-			<img src="https://c7.staticflickr.com/8/7332/27297725926_330d69a1a2_c.jpg" alt="Rach"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script> -->
 		</div>
 
 		<div class="newboxes" id="people">
