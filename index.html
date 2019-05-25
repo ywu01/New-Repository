@@ -1,61 +1,168 @@
-
 <!DOCTYPE html>
 <html>
 <head>
 <link href='https://fonts.googleapis.com/css?family=Lato:300,100,100italic' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="design.css">
-<style> 
+<!-- Is Bootstrap allowed? Framework, not a library.. -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="pdesign.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-</style>
+<script>
+
+$( document ).ready(function() {
+    $('.newboxes').each(function(index){
+	$(this).hide();
+})
+});
+
+$( document ).ready(function() {
+    $('.landing').each(function(index){
+	$(this).show();
+})
+});
+
+function ShowOne(thechosenone) {
+
+     $('.newboxes').each(function(index) {
+     	console.log("hello it's me");
+          if ($(this).attr("id") == thechosenone) {
+               $(this).show();
+          }
+          else {
+               $(this).hide();
+          }
+     });
+}
+
+</script>
+
 </head>
 <body>
 
 <div class="container">
 	<div class="container">
-		<h1>KIT WU</h1>
+		<h3>A QUICK COLLECTION</h3>
 	</div>
 
 	<br>
 	<br>
 
-	<div class="col-lg-6">
-		<img src="https://c1.staticflickr.com/9/8191/29128463651_e316778dbc_c.jpg" alt="DSC_0202"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+	<div class="col-lg-4">
+		<a href="https://medium.com/@ywu01/the-snapshot-26a284367d72">SNAPSHOT</a>
+		<h2 id="people" onclick="ShowOne('portraits')">INDIVIDUALS</h2>
+		<h2 id="toggle" onclick="ShowOne('crimson')">CRIMSON</h2>
+		<h2 id="toggle" onclick="ShowOne('places')">PLACES</h2>
+		<h2 id="people" onclick="ShowOne('people')">GROUPS</h2>
+		<h2 id="people" onclick="ShowOne('graduation')">GRADUATION</h2>
+		<a href="http://ywu01.github.io/">HOMEPAGE</a>
 	</div>
 
-	<div class="container col-lg-6">
-		<h3 data-toggle="collapse" href="#journal">BIO</h3>
-		<div id="journal" class="collapse">
-			<p> I studied Economics and minored in Computer Science in my college years. In my spare time, I took photos, rowed intramural crew, and explored a good part of New England. Now, I'm in New York trying to improve healthcare. Life shareholder letters and photos can be found below.
-			</p>
+	<div class="col-lg-8">
+		<div class="newboxes landing" id="landing">
+			<img src="https://c1.staticflickr.com/4/3949/33410124091_68e53a6a35_c.jpg" alt="DSC_0599"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+		</div>
+	</div>
+
+<!-- 
+	ANALYSIS OF A IMAGE LINK
+	33076152432 is a photo id. Pop it into the last part of https://www.flickr.com/photos/94864565@N08/PHOTOIDHERE/ to bring up the page from which you can change resolutions.	
+
+	<img src="https://c1.staticflickr.com/1/689/33076152432_19bfc79d8b_c.jpg" alt="OHT"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+ -->
+	<div class="col-lg-8 hello">
+		<div class="newboxes" id="portraits">
+			<h3>Hillary, Biden, Spielberg, Rashida, Viola, Lucy Liu, Stephen Breyer</h3>
+			<img src="https://c1.staticflickr.com/1/689/33076152432_19bfc79d8b_c.jpg" alt="OHT"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			<img src="https://c1.staticflickr.com/4/3949/33410124091_68e53a6a35_c.jpg" alt="DSC_0599"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			<img src="https://farm8.staticflickr.com/7001/27260317131_b94a335682_c.jpg" alt="DSC_1436"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			<img src="https://farm8.staticflickr.com/7195/27055880050_372fd0e5c0_c.jpg" alt="DSC_9545"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			<img src="https://c1.staticflickr.com/1/627/32406181414_84c289ca35_c.jpg" alt="OHT"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			<img src="https://c7.staticflickr.com/4/3930/15381828910_474213de61_c.jpg" alt="BIDEN"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			<img src="https://farm2.staticflickr.com/1689/25036389722_328f8263ae_c.jpg" alt="Lucy Liu, at Kirkland House / Cultural Rhythms, Harvard"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			<img src="https://c3.staticflickr.com/6/5679/22832303546_c451c3bf7d_c.jpg" alt="SUPREME COURT JUSTICE BREYER"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 		</div>
 
-		<h3 data-toggle="collapse" href="#intro">SHAREHOLDER LETTERS / LINKS</h3>
-			<div id="intro" class="collapse">
+		<div class="newboxes" id="graduation">
+			<h3>Spielberg</h3>
+			<img src="https://c8.staticflickr.com/8/7348/27260316631_954906b066_c.jpg" alt="DSC_1444"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			<img src="https://c4.staticflickr.com/8/7001/27260317131_b94a335682_c.jpg" alt="DSC_1436"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			<h3>Rashida Jones</h3>
+			<img src="https://c3.staticflickr.com/8/7195/27055880050_372fd0e5c0_c.jpg" alt="DSC_9545"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			<img src="https://c1.staticflickr.com/8/7307/27055884440_a873f07826_c.jpg" alt="DSC_9522"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			<img src="https://c3.staticflickr.com/8/7416/27055889610_7186de2490_c.jpg" alt="DSC_9486"><script async src="//embedr.flickrcom/assets/client-code.js" charset="utf-8"></script>
+			<h3>Kirkland Commencement</h3>
+			<img src="https://
+			c6.staticflickr.com/8/7196/27260335821_e083f6b5b4_c.jpg" alt="DSC_1320"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			<img src="https://
+			c7.staticflickr.com/8/7797/26723575494_7230b14141_c.jpg" alt="DSC_1319"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			<img src="https://c5.staticflickr.com/8/7376/26723571044_30968a70fe_k.jpg" alt="DSC_1337"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>	
+			<img src="https://c7.staticflickr.com/8/7470/26723584374_de1d02657c_k.jpg" alt="DSC_1054"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			<img src="https://c5.staticflickr.com/8/7446/27055837220_3dd7cbfefb_k.jpg" alt="DSC_0326"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			<img src="https://c5.staticflickr.com/8/7523/26723599564_af5a40ab54_k.jpg" alt="DSC_0449"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			<img src="https://c3.staticflickr.com/8/7353/27055870890_42aec4d5f0_k.jpg" alt="DSC_9623"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			<img src="https://c7.staticflickr.com/8/7789/27055872510_4c20ef04be_k.jpg" alt="DSC_9570"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+		</div>
 
-				<p><a href="http://ywu01.github.io/pdfs/2017-18.pdf">2017-18</a></p>
+		<div class="newboxes" id="people">
+			<h3>Crowds; non-individuals.</h3>
+			<img src="https://c2.staticflickr.com/9/8151/28726424113_d864a8a264_c.jpg" alt="DSC_2446"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			<img src="https://farm8.staticflickr.com/7042/26966690071_cb319805fc_b.jpg" alt="DSC_6430"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			<img src="https://c3.staticflickr.com/2/1586/26516582322_d10ce074e6_c.jpg" alt="DSC_1653"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			<img src="https://c8.staticflickr.com/2/1442/25584066671_2453c7ff00_c.jpg" alt="DSC_0456"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script><img src="https://farm5.staticflickr.com/4616/39093492794_6c6311b4ec_c.jpg" alt="DSC_0982"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			<img src="https://c3.staticflickr.com/8/7334/27297718786_a60568c445_c.jpg" alt="Grad Pshoot"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			<img src="https://farm8.staticflickr.com/7459/26429685954_92662c67f5_c.jpg" alt="DSC_6408"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			<img src="https://farm8.staticflickr.com/7608/27001881606_4ec07de206_b.jpg" alt="DSC_6703"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			<img src="https://farm8.staticflickr.com/7050/27035445485_ffc04fd301_c.jpg" alt="DSC_6757"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			<img src="https://farm8.staticflickr.com/7168/26756200071_2c5d937a88_c.jpg" alt="DSC_6051"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			<img src="https://farm8.staticflickr.com/7291/26726763762_d5a4eace70_c.jpg" alt="DSC_5832"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			<img src="https://farm8.staticflickr.com/7239/26820342825_dd4872fd4f_c.jpg" alt="DSC_5495"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>		
+		</div>
 
-				<p><a href="https://www.hioscar.com/individuals/network/ny">What I do now.</a>Late 2017 and beyond at Oscar.</p>
+		<div class="newboxes" id="places">
+			<h3>Scenes around Harvard, Boston, and elsewhere.</h3>
+			<img src="https://farm8.staticflickr.com/7604/26929711776_870328b1fc_c.jpg" alt="DSC_6366"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			<img src="https://farm2.staticflickr.com/1484/25521067464_e00c9c52a5_c.jpg" alt="DSC_0001"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			<img src="https://farm2.staticflickr.com/1600/25821491776_d8f6e8de81_c.jpg" alt="DSC_1274"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			<img src="https://farm2.staticflickr.com/1508/25821492116_9f584b0849_c.jpg" alt="DSC_1252"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			<img src="https://farm2.staticflickr.com/1478/25034185600_45348646ee_c.jpg" alt="The Harvard Radcliffe Orchestra"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			<img src="https://c8.staticflickr.com/1/732/21667082383_2036eacda3_c.jpg" alt="CHARLES"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			<img src="https://farm2.staticflickr.com/1468/24865874475_34a7e5fba3_c.jpg" alt="DSC_0209"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			<img src="https://farm6.staticflickr.com/5668/23173615546_d9944fd0d3_c.jpg" alt="DSC_3795"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			<img src="https://c2.staticflickr.com/2/1654/24249228889_e06ff79225_c.jpg" alt="WINTER STREAM"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			<img src="https://farm5.staticflickr.com/4408/36824802445_05be3cbbcd_k.jpg" alt="DSC_9460"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			<img src="https://farm5.staticflickr.com/4313/35469828924_4861272266_k.jpg" alt="DSC_8975"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			<img src="https://farm3.staticflickr.com/2893/32695258964_b891b143e1_k.jpg" alt="DSC_0696"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
-				<p><a href="https://medium.com/@ywu01/the-snapshot-26a284367d72">Photo snapshot.</a></p>
+		</div>
 
-			</div>
-
-		<!-- <a href="http://ywu01.github.io/pdfs/resume.pdf">RESUME (Sept 2017)</a> -->
-		<br>
-		<a href="http://ywu01.github.io/photography/photography.html">PHOTOGRAPHY</a>
-		<br>
-		<a href="mailto:kitwu68@gmail.com" target="_top">EMAIL</a>
-		<br>
-		<a href="ykitwu.me/mobile/mobile.html" target="_top">MOBILE</a>
-
-	</div>
+		<div class="newboxes" id="crimson">
+			<h3>Protests, sports. A sample of news photos I've shot in the past for The Harvard Crimson.</h3>
+			<img src="https://farm8.staticflickr.com/7386/26317432533_362a354c79_c.jpg" alt="DSC_6215"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			<img src="https://farm8.staticflickr.com/7396/26853801381_3ee965b5db_c.jpg" alt="DSC_6136"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			<img src="https://farm8.staticflickr.com/7670/26853801321_3ee965b5db_c.jpg" alt="DSC_6148"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			<h3>South by Southwest, 2017</h3>
+			<img src="https://farm3.staticflickr.com/2817/32695254774_296dae75a2_k.jpg" alt="DSC_0878"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			<img src="https://farm4.staticflickr.com/3942/33356354622_f9db48a3f0_k.jpg" alt="DSC_1265"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			<img src="https://farm4.staticflickr.com/3790/33538194105_c8b28d56a6_k.jpg" alt="DSC_1407"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			<img src="https://farm3.staticflickr.com/2862/33538194525_c83c773aa8_k.jpg" alt="DSC_1415"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			<img src="https://farm3.staticflickr.com/2857/33356353802_5f7acf6cd0_k.jpg" alt="DSC_1426"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			<img src="https://farm5.staticflickr.com/4670/25950918578_ef6ca9f944_c.jpg" alt="DSC_1253"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			<img src="https://farm3.staticflickr.com/2893/32695258964_b891b143e1_k.jpg" alt="DSC_0696"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			<h3>Sports</h3>
+			<img src="https://farm6.staticflickr.com/5835/29568617213_1f9e73f5c5_k.jpg" alt="DSC_4433"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			<img src="https://farm6.staticflickr.com/5253/30163348956_ab2c95e3de_k.jpg" alt="DSC_4541"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			<img src="https://farm6.staticflickr.com/5511/30083114252_c7652f64f1_k.jpg" alt="DSC_4417"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			<img src="https://farm2.staticflickr.com/1648/25443273380_a0edfcd419_c.jpg" alt="DSC_1130"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			<img src="https://farm2.staticflickr.com/1467/24511307474_4f9601dab8_c.jpg" alt="The Crowd at Harvard vs. Cornell"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			<img src="https://farm6.staticflickr.com/5705/20960977753_114fe63aff_c.jpg" alt="DSC_1399"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			<img src="https://c4.staticflickr.com/1/720/21659450059_3209935bab_c.jpg" alt="IGNOBEL"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			<img src="https://c2.staticflickr.com/9/8669/16616902025_e8777d1c24_c.jpg" alt="FAUST"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			<img src="https://c4.staticflickr.com/9/8747/17293208675_c1119d8ff6_c.jpg" alt="MIDO"><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+		</div>
 
 </div>
 
 </body>
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </html>
